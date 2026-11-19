@@ -1,8 +1,7 @@
 import time
 from selenium import webdriver
-from Login import SwagLabLoginPage
-from Home import SwagLabHomePage
 
+from pageClasses.Login import SwagLabLoginPage
 
 driver=webdriver.Edge()
 driver.maximize_window()
