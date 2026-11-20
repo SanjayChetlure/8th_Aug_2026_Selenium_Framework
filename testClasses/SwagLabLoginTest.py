@@ -20,12 +20,14 @@ class Test_SwagLabLogin:
 
         homeObj = SwagLabHomePage(driver)
         actLogoText = homeObj.getLogoText()
-        expLogoText = "Swag Labs"
+        expLogoText = "Swag Labs1"
 
         if actLogoText == expLogoText:
             print("Login Test is Passed")
+            assert True
         else:
             print("Login Test is Failed")
+            assert False
 
         time.sleep(2)
         driver.quit()
@@ -45,8 +47,10 @@ class Test_SwagLabLogin:
 
         if actLoginFailedErrorMsg == expLoginFailedErrorMsg:
             print("Login Failed Test is Passed")
+            assert True
         else:
             print("Login Failed Test is Failed")
+            assert False
 
 
         time.sleep(3)
